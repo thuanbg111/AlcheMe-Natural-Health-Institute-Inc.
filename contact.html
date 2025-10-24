@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact AlcheMe Natural Health Institute, Inc. in Tustin, California." />
+  <title>Contact · AlcheMe Natural</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="theme-alcheme">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="AlcheMe Natural Health Institute logo" />
+      <div class="brand-text">
+        <span class="brand-name">AlcheMe Natural Health Institute, Inc.</span>
+        <span class="brand-tag">Public Benefit · IRS 501(c)(3)</span>
+      </div>
+    </a>
+    <nav class="side-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs & Trainings</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <span class="topbar-title">AlcheMe Natural Health Institute, Inc.</span>
+  </header>
+
+  <main class="content page-narrow">
+    <header class="page-header">
+      <h1>Contact Us</h1>
+      <p>We welcome community partners, providers, and supporters. Reach us using the details or form below.</p>
+    </header>
+
+    <div class="contact-grid">
+      <form class="contact-form" name="contact" netlify>
+        <input type="hidden" name="form-name" value="contact" />
+        <label>Full Name<input name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Message<textarea name="message" rows="6" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <ul>
+          <li><strong>Address:</strong> 2913 EL CAMINO REAL NUMBER 809, Tustin, CA 92782</li>
+          <li><strong>Phone:</strong> <a href="tel:+15596488523">+1 559 648 8523</a></li>
+          <li><strong>Email:</strong> <a href="mailto:contact@alchemenatural.online">contact@alchemenatural.online</a></li>
+          <li><strong>EIN:</strong> 920313050</li>
+          <li><strong>Status:</strong> IRS §501(c)(3) — Nonprofit Public Benefit</li>
+        </ul>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps?q=2913+EL+CAMINO+REAL+%23809,+Tustin,+CA+92782&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>AlcheMe Natural Health Institute, Inc.</strong> · EIN: <strong>920313050</strong> · 2913 EL CAMINO REAL NUMBER 809, Tustin, CA 92782</p>
+      <p>Phone: <a href="tel:+15596488523">+1 559 648 8523</a> · Email: <a href="mailto:contact@alchemenatural.online">contact@alchemenatural.online</a></p>
+      <p>U.S. nonprofit under <strong>IRS §501(c)(3)</strong>. Donations may be tax-deductible as allowed by law.</p>
+      <small>© 2022 AlcheMe Natural Health Institute, Inc.</small>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.getElementById('sidebar');
+    menuBtn.addEventListener('click', ()=> sidebar.classList.toggle('open'));
+  </script>
+</body>
+</html>
